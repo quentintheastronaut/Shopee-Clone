@@ -1,0 +1,119 @@
+.navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.navbar-item , .navbar-item-link {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+    border: none;
+    background-color: transparent;
+    cursor: pointer ;
+
+}
+
+.navbar-item:hover , .navbar-item-link:hover, .navber-icon-link:hover {
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);
+    
+}
+ 
+.navbar-item {
+    min-height: 26px;
+    margin: 0px 8px;
+    position: relative;
+ 
+}
+
+.navbar-item--strong  {
+     font-weight: 400px;
+}
+
+.navbar-item--seperate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    
+    height: 12px;
+    border-left: 1px solid #fb9086;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-icon {
+    margin: 0 4px;
+    font-size: 1.8rem;
+}
+
+.navber-icon-link {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.navbar-item-label {
+    cursor: text;
+    color: white;
+}
+
+.myQRcode 
+{
+    display: none;
+    animation: fadeIn ease-in .3s;
+}
+
+.navbar-item:hover .myQRcode{
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  /* Notify */
+
+  .notification {
+    display: none;
+    transform-origin: calc(100% - 20px) top  ;
+    animation: zoomOut ease-in .25s;
+    will-change: opacity, transform;
+    
+  }
+
+  .notify:hover .notification {
+    display: block;
+    
+  }
+
+
+  @keyframes zoomOut {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+
+  

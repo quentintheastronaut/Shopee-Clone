@@ -1,0 +1,98 @@
+.header {
+    
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+
+.header_with_search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 1200px;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+
+.shopee {
+    padding-left: 7px;
+    padding-top: 20px;
+}
+
+.logo {
+    position: relative;
+}
+
+.shopbag {
+    z-index: 1;
+}
+
+.s {
+    
+    color :#fe6433;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    z-index: 2;
+    
+}
+
+.recommendbar {
+    margin-bottom: 20px;
+    width: 840px;
+    margin-left: 140px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.recommendbar__opt {
+    text-decoration: none;
+    margin-right: 12px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.header__cart {
+    position: relative;
+    cursor: pointer;
+}
+.myCart {
+    display: none;
+    animation: zoomOut ease-in .25s;
+    
+}
+
+.header__cart:hover .myCart {
+    display: block;
+}
+
+.myCart::before {
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid ;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+}

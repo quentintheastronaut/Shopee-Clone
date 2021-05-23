@@ -1,0 +1,33 @@
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+    max-width: 840px;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+.searchbar__input {
+    height: 34px;
+    min-width: 764px;
+    margin-left:10px;
+    border:none;
+    outline: none;
+    font-size: 14px;
+    color: rgba(0,0,0, 0.1);
+}
+
+.searchbar__btn {
+    height: 34px;
+    border: none;
+    background-color: #ee5130;
+    min-width: 60px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.searchbar__btn:hover {
+    opacity: 0.7;
+}

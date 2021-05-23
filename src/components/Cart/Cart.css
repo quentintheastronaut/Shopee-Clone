@@ -1,0 +1,16 @@
+.cart {
+    height: 260px;
+    width: 400px;
+    border-radius: 3px;
+    position: absolute;
+    background-color: white;
+    top: 120%;
+    right: 0;
+    border: 0.5px solid rgba(0,0,0, 0.1);
+}
+
+.cart__content {
+    padding-top: 175px;
+    font-size: 14px;
+}
+

@@ -1,0 +1,124 @@
+.mynotify {
+    width: 404px;
+    position: absolute;
+    top: 130%;
+    
+    background-color:white;
+    right: 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+}
+
+.notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+    cursor:default;
+}
+
+.notify-footer {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+
+.notify-footer .notify-h3 {
+    color: #666;
+    font-weight: 400;
+    padding: 0 0;
+    font-size: 1.6rem;
+    line-height: 40px;
+    
+}
+
+.notify-footer a {
+    text-decoration: none;
+}
+
+
+.notify-header .notify-h3 {
+    color: #666;
+    margin: 0 0 0 -240px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    
+}
+
+
+
+.notify-list {
+    padding-left: 0;
+}
+
+.notify-item {
+    display: flex;
+    font-size: 14px;
+    color:var(--black-color);
+    background-color: var(--primary-color-rgba);
+    padding: 10px 0;
+}
+
+.notify-item--viewed {
+    background-color: var(--white-color);
+}
+
+.notify-item:hover {
+    background-color: #DDD;
+}
+
+.notify-content {
+    
+    margin-left: 12px;
+    
+    
+}
+
+.notify-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: auto auto ;
+}
+
+.notify-title {
+    display: block;
+    font-size: 14px;
+    color: black;
+    line-height: 1.4rem;
+}
+
+.notify-description {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    padding-left: -12px;
+    margin-top: 4px;
+    line-height: 1.6rem;
+
+}
+   
+.notify-link {
+    text-decoration: none;
+    display: flex;
+    margin: 0 0;
+    text-align: left;
+}
+
+
+.arrow-block {
+    margin-top: -10px;
+    height: 10px;
+    width: 100%;
+    background-color: transparent;
+}
+
+
+.mynotify::before {
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid ;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    right: 12px;
+    top: -30px;
+}
